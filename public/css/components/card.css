@@ -1,0 +1,42 @@
+@import '../foundations/_colors.css';
+
+.list__item--card {
+    width: fit-content;
+    list-style: none;
+    border-radius: 1rem;
+    background-color: var(--fill-accent-default);
+    margin-right: .25rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.card__image {
+    transition: .625s;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.card__text {
+    margin: 0;
+    font-weight: 600;
+    padding: .5rem 1rem 0 0;
+    letter-spacing: -0.125px;
+    color: var(--label-accent-default);
+}
+
+.card__text--span {
+    color: var(--label-accent-disabled);
+}
+
+.list__item--card:is(:hover, :focus-within) {
+    transition: .5s;
+    color: var(--label-accent-hover);
+    background-color: var(--fill-accent-hover);
+
+    .card__image {
+        transition: .625s;
+        width: 20vw;
+    }
+}

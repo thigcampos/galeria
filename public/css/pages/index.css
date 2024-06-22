@@ -50,6 +50,21 @@
   color: var(--label-accent-default);
 }
 
+.highlight__title {
+  font-weight: 400;
+  font-family: var(--font-family-body);
+  color: var(--label-accent-disabled);
+
+  span {
+    font-weight: 600;
+    color: var(--label-accent-default);
+  }
+}
+
+.highlight__list {
+  padding-left: 0;
+}
+
 .navigation__list {
   display: flex;
   gap: 2rem;

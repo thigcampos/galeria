@@ -2,31 +2,48 @@
 import '../../public/css/pages/index.css'
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+const colecao = {
+	"nome": "Mantiqueira",
+	"imagens": [
+		{
+			"titulo": "Igreja Matriz",
+			"place": "Tuiuti",
+			"src": "https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
+		},
+		{
+			"titulo": "Igreja Matriz",
+			"place": "Tuiuti",
+			"src": "https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
+		},
+		{
+			"titulo": "Igreja Matriz",
+			"place": "Tuiuti",
+			"src": "https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
+		},
+		{
+			"titulo": "Igreja Matriz",
+			"place": "Tuiuti",
+			"src": "https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
+		}
+	]
+}
 ---
 
 <Layout title="Galeria">
 	<main>
 		<h1 class="heading__title">Galeria by <span>Campos</span></h1>
 		<p class="heading__subtitle">
-			To get started, open the directory <code>src/pages</code> in your project.
-		</p>
-		<ul role="list" class="link-card-grid" style="padding-left: 0;">
-			<Card
-				href="https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
-				title="Documentation"
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-			/>
+			A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual, uma canção silenciosa que narra histórias de lugares onde pisei, vivi, amei.		</p>
+		<h3 class="highlight__title">Álbum do dia <span>{colecao.nome}</span></h3>
+		<ul role="list" class="highlight__list">
+			{colecao.imagens.map((imagem) => (
+				<Card
+					href={imagem.src}
+					title={imagem.titulo}
+					place={imagem.place}
+				/>
+			))}
 		</ul>
 	</main>
 </Layout>
