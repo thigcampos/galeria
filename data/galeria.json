@@ -1,0 +1,31 @@
+{
+	"nome": "Mantiqueira",
+	"url": "",
+	"imagens": [
+		{
+			"titulo": "Igreja Matriz",
+			"description": "Igraja Matriz de Tuiuti vista da praça principal",
+			"src": "https://imagens.thigcampos.com/Mantiqueira/AERO-02.jpg"
+		},
+		{
+			"titulo": "Entardecer em Tuiuti",
+			"description": "Vista do pôr do sol em Tuiuti",
+			"src": "https://imagens.thigcampos.com/Mantiqueira/AERO-03.jpg"
+		},
+		{
+			"titulo": "Pedro Café em Serra Negra",
+			"description": "Pedro Café visto da praça d'outro lado da rua",
+			"src": "https://imagens.thigcampos.com/Mantiqueira/AERO-05.jpg"
+		},
+		{
+			"titulo": "Fotografando a Fontana di Trevi",
+			"description": "Moça, minha conjugê, fotografando a Fontana di Trevi em Serra Negra - São Paulo",
+			"src": "https://imagens.thigcampos.com/Mantiqueira/AERO-06.jpg"
+		},
+		{
+			"titulo": "Restaurante Americana em Serra Negra",
+			"description": "Iluminação do restaurante Americana em destaque",
+			"src": "https://imagens.thigcampos.com/Mantiqueira/AERO-10.jpg"
+		}
+	]
+}

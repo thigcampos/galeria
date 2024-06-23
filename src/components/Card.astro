@@ -2,17 +2,13 @@
 import '../../public/css/components/card.css';
 
 interface Props {
-	title: string;
-	place?: string;
-	href: string;
+	description: string;
+	src: string;
 }
 
-const { href, title, place } = Astro.props;
+const { description, src } = Astro.props;
 ---
 
 <li class="list__item--card">
-	<div class="card__wrapper">
-		<img src={href} alt="" class="card__image"/>
-		<p class="card__text">{title} <span class="card__text-span">{place || ''}</span></p>
-	</div>
+	<img src={src} alt={description} class="card__image"/>
 </li>

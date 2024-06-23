@@ -1,18 +1,9 @@
 ---
-import '../../public/css/pages/index.css'
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
-const colecao = {
-	"nome": "Mantiqueira",
-	"imagens": [
-		{
-			"titulo": "Igreja Matriz",
-			"place": "Tuiuti",
-			"src": "https://imagens.thigcampos.com/0051-AEROCOLOR100-2.jpg"
-		},
-	]
-}
+import '../../public/css/pages/index.css'
+import galeria from '../../data/galeria.json';
 ---
 
 <Layout title="Galeria">
@@ -20,13 +11,12 @@ const colecao = {
 		<h1 class="heading__title">Galeria by <span>Campos</span></h1>
 		<p class="heading__subtitle">
 			A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual, uma canção silenciosa que narra histórias de lugares onde pisei, vivi, amei.		</p>
-		<h3 class="highlight__title">Álbum do dia <span>{colecao.nome}</span></h3>
+		<h3 class="highlight__title">Álbum do dia <a href={galeria.url}>{galeria.nome}</a></h3>
 		<ul role="list" class="highlight__list">
-			{colecao.imagens.map((imagem) => (
+			{galeria.imagens.map((image) => (
 				<Card
-					href={imagem.src}
-					title={imagem.titulo}
-					place={imagem.place}
+					src={image.src}
+					description={image.description}
 				/>
 			))}
 		</ul>

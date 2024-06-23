@@ -47,7 +47,7 @@
 
 .heading__subtitle {
   font-size: var(--font-size-20);
-  color: var(--label-accent-default);
+  color: var(--label-primary-default);
 }
 
 .highlight__title {
@@ -56,7 +56,6 @@
   color: var(--label-accent-disabled);
 
   a {
-    font-weight: 600;
     color: var(--label-accent-default);
   }
 }
