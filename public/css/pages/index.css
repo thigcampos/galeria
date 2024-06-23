@@ -16,7 +16,7 @@
 }
 
 .heading__title {
-  margin-bottom: .25rem;
+  margin: 1.5rem 0 .25rem 0;
   letter-spacing: -2.88px;
   font-size: var(--font-size-120);
   color: var(--label-accent-default);
@@ -55,30 +55,20 @@
   font-family: var(--font-family-body);
   color: var(--label-accent-disabled);
 
-  span {
+  a {
     font-weight: 600;
     color: var(--label-accent-default);
   }
 }
 
 .highlight__list {
+  gap: .25rem;
+  display: flex;
   padding-left: 0;
 }
 
-.navigation__list {
-  display: flex;
-  gap: 2rem;
-}
-
-.navigation__item {
-  font-size: var(--font-size-22);
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-  .navigation__list {
-    gap: 2.5rem;
-    display: flex;
+@media screen and (max-width: 1170px) {
+  .highlight__list {
     flex-wrap: wrap;
   }
 }
