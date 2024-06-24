@@ -6,11 +6,15 @@ import '../../public/css/pages/index.css'
 import galeria from '../../data/galeria.json';
 ---
 
-<Layout title="Galeria">
+<Layout 
+	title="Galeria Campos"
+	description="A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual que narra histórias de lugares onde andei, momentos que vivi e pessoas que amei."
+>
 	<main>
-		<h1 class="heading__title">Galeria by <span>Campos</span></h1>
+		<h1 class="heading__title">Galeria <span>Campos</span></h1>
 		<p class="heading__subtitle">
-			A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual, uma canção silenciosa que narra histórias de lugares onde pisei, vivi, amei.		</p>
+			A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual que narra histórias de lugares onde andei, momentos que vivi e pessoas que amei.
+		</p>
 		<h3 class="highlight__title">Álbum do dia <a href={galeria.url}>{galeria.nome}</a></h3>
 		<ul role="list" class="highlight__list">
 			{galeria.imagens.map((image) => (
