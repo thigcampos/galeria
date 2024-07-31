@@ -1,6 +1,6 @@
-@import 'foundations/_colors.css';
-@import 'foundations/_fonts.css';
-@import 'foundations/_measures.css';
+@import 'copan/colors.css';
+@import 'copan/text.css';
+@import 'copan/layout.css';
 
 html,
 body {

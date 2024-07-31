@@ -10,19 +10,10 @@ import galeria from '../../data/galeria.json';
 	title="Galeria Campos"
 	description="A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual que narra histórias de lugares onde andei, momentos que vivi e pessoas que amei."
 >
-	<main>
-		<h1 class="heading__title">Galeria <span>Campos</span></h1>
+	<main class="section">
+		<h1 class="heading__title">Galeria <i>Campos</i></h1>
 		<p class="heading__subtitle">
 			A galeria que se desdobra diante dos olhos é uma ode às memórias, um relicário de instantes capturados na imortalidade do clique. Aqui, cada fotografia é um poema visual que narra histórias de lugares onde andei, momentos que vivi e pessoas que amei.
 		</p>
-		<h3 class="highlight__title">Álbum do dia <a href={galeria.url}>{galeria.nome}</a></h3>
-		<ul role="list" class="highlight__list">
-			{galeria.imagens.map((image) => (
-				<Card
-					src={image.src}
-					description={image.description}
-				/>
-			))}
-		</ul>
 	</main>
 </Layout>

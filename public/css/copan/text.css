@@ -1,0 +1,174 @@
+:root {
+  --font-family-title: "Junicode", serif;
+  --font-family-body: "Inter", sans-serif;
+  --font-family-accent: "Junicode", serif;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-size-120: 7.5rem;
+  --font-size-80: 5rem;
+  --font-size-64: 4rem;
+  --font-size-48: 3rem;
+  --font-size-40: 2.5rem;
+  --font-size-36: 2.25rem;
+  --font-size-32: 2rem;
+  --font-size-28: 1.75rem;
+  --font-size-24: 1.5rem;
+  --font-size-22: 1.375rem;
+  --font-size-20: 1.25rem;
+  --font-size-18: 1.125rem;
+  --font-size-16: 1rem;
+  --font-size-14: 0.875rem;
+  --letter-spacing-title: 0px;
+  --letter-spacing-subtitle: 0px;
+  --letter-spacing-body: 0px;
+  --font-line-height-title: 105%;
+  --font-line-height-body: 150%;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-120: 3.5rem;
+    --font-size-80: 3.5rem;
+    --font-size-64: 3rem;
+    --font-size-48: 2.5rem;
+    --font-size-40: 2.25rem;
+    --font-size-36: 2rem;
+    --font-size-32: 1.75rem;
+    --font-size-28: 1.5rem;
+    --font-size-24: 1.375rem;
+    --font-size-22: 1.25rem;
+    --font-size-20: 1.125rem;
+    --font-size-18: 1rem;
+    --font-size-16: 0.875rem;
+    --font-size-14: 0.75rem;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-Italic.woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-MediumItalic.woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Junicode";
+  src: url("../../fonts/Junicode/Junicode2.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Junicode";
+  src: url("../../fonts/Junicode/Junicode-Italic2.woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Junicode";
+  src: url("../../fonts/Junicode/Junicode-Bold2.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Junicode";
+  src: url("../../fonts/Junicode/Junicode-BoldItalic2.woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-family: var(--font-family-title);
+  line-height: var(--font-line-height-title);
+  letter-spacing: var(--font-letter-spacing-title);
+}
+
+p {
+  color: inherit;
+  font-size: var(--font-size-20);
+  font-family: var(--font-family-body);
+  line-height: var(--font-line-height-body);
+  letter-spacing: var(--font-letter-spacing-body);
+}
+
+span {
+  color: var(--label-primary-disabled);
+  font-family: var(--font-family-body);
+  line-height: var(--font-line-height-body);
+}
+
+a {
+  color: var(--label-accent-default);
+  font-family: var(--font-family-body);
+  line-height: var(--font-line-height-body);
+  letter-spacing: var(--font-letter-spacing-body);
+}
+
+.nav--item {
+  font-size: var(--font-size-20);
+  color: var(--label-accent-default);
+  transition: var(--anchor-transition);
+  text-decoration: var(--anchor-decoration);
+}
+
+.nav--item:hover, .nav--item:focus {
+  font-style: italic;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+ol:before {
+  font-weight: bold;
+  content: attr(aria-label);
+  font-size: var(--font-size-64);
+  font-family: var(--font-family-title);
+}
+
+.list--container-column-left {
+  width: 50%;
+}
+
+.list--container-column-right {
+  width: 50%;
+}
+
+li {
+  color: inherit;
+  font-size: var(--font-size-20);
+  font-family: var(--font-family-body);
+  line-height: var(--font-line-height-body);
+  letter-spacing: var(--font-letter-spacing-body);
+}
+
+.list--item {
+  margin-top: 2rem;
+}
+.list--item span {
+  margin-right: 1rem;
+}
